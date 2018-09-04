@@ -11,6 +11,14 @@ npm install --save library-modal-component
 
 ```
 
+Install Bootstrap as a dependency
+
+```
+
+npm install --save bootstrap
+
+```
+
 Import component into your app
 
 ```
@@ -18,6 +26,15 @@ Import component into your app
 import ModalComponent from 'library-modal-component'
 
 ```
+
+Import Bootstrap Javascript into your app
+
+```
+
+import 'bootstrap/dist/js/bootstrap.bundle.js'
+
+```
+
 
 Create the function that will handle the modal confirm
 
