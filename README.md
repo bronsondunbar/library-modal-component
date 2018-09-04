@@ -15,7 +15,7 @@ Import component into your app
 
 ```
 
-import Modal from 'library-modal-component'
+import ModalComponent from 'library-modal-component'
 
 ```
 
@@ -23,14 +23,31 @@ Create the function that will handle the modal confirm
 
 ```
 
-handleButtonClick(event) {
-	this.setState ({
-		buttonAction: 'Click'
-	});
+handleModalConfirm (event, modalId) {
+	document.getElementById(modalId).click()
 }
 
 ```
 
+Render the component with the functions we created as well as any other props that are needed
+
+```
+
+render () {
+	return (
+		<ModalComponent
+			modalTheme="light"
+			modalId="modalId"
+			modalTitle="Modal title"
+			modalBody="Modal body"
+      modalCloseText="Close"
+			modalClose="closeModal"
+      modalConfirmText="Confirm"
+			handleModalConfirm={this.handleModalConfirm.bind(this)} />
+	)
+}
+
+```
 
 
 | Prop             | Values                      |
