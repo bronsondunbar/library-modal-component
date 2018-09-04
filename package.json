@@ -1,6 +1,6 @@
 {
   "name": "library-modal-component",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Modal component for React",
   "main": "./lib/Modal.js",
   "license": "MIT",

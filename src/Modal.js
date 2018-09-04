@@ -1,6 +1,8 @@
 import React, { Fragment } from 'react'
 import classNames from 'classnames'
 
+import './style.css'
+
 const ModalComponent = ({ modalTheme, modalId, modalTitle, modalBody, modalCloseText, modalClose, modalConfirmText, handleModalConfirm }) => {
 
   let modalClass = classNames({
@@ -32,7 +34,7 @@ const ModalComponent = ({ modalTheme, modalId, modalTitle, modalBody, modalClose
             <button
               type="button"
               className="btn btn-default"
-              onClick={!modalConfirm ? null  : (event) => handleModalConfirm(event, modalId)}>
+              onClick={!handleModalConfirm ? null  : (event) => handleModalConfirm(event, modalId)}>
                 {!modalConfirmText ? "Confirm" : modalConfirmText}
             </button>
           </div>
